@@ -5,7 +5,7 @@ import os
 
 class DBConnectionHandler:
     def __init__(self) -> None:
-        self.__connection_string = os.getenv('DB_CONNECTION_STRING', 'mysql+pymysql://root:brtt123456@localhost:3306/testii')
+        self.__connection_string = os.getenv('DB_CONNECTION_STRING', 'mysql+pymysql://root:password@localhost:3306/db')
         self.__engine = self.__create_database_engine()
 
     def __create_database_engine(self):
